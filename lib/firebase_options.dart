@@ -52,12 +52,5 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDAPAFhTHetcdrkQ87pgcBI2j1fFpuKOEo',
-    appId: '1:5350174320:android:75b1d7d2aa7f53dada4eb5',
-    messagingSenderId: '5350174320',
-    projectId: 'markus-9983a',
-    databaseURL: 'https://markus-9983a-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'markus-9983a.appspot.com',
-  );
+ 
 }
