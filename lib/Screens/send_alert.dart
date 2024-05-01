@@ -37,7 +37,6 @@ class _SendNotificationState extends State<SendNotification> {
                   sendPushNotification(
                       "Emergency Alert!",
                       "Emergency call for fire rescue triggered!",
-                      "cQBS9d39RICHdAyUKOoead:APA91bEnWuDFMWCsPP4P-ZqYHErUM8xXc9D2xdASp3L-efpanTrst6-LHuUjnQAAy7g6JxAc32g1Ot4U1HxuR8o35RVORzlPZ6_WxM9N4aoj9v96xAnFQ-VOrrPT2_pc6zeN1BhiuonH");
                 },
                 child: Text(
                   "Fire Rescue!",
@@ -60,7 +59,6 @@ class _SendNotificationState extends State<SendNotification> {
                   sendPushNotification(
                       "Emergency Alert!",
                       "Emergency call for crime rescue triggered!",
-                      "cQBS9d39RICHdAyUKOoead:APA91bEnWuDFMWCsPP4P-ZqYHErUM8xXc9D2xdASp3L-efpanTrst6-LHuUjnQAAy7g6JxAc32g1Ot4U1HxuR8o35RVORzlPZ6_WxM9N4aoj9v96xAnFQ-VOrrPT2_pc6zeN1BhiuonH");
                 },
                 child: Text(
                   "Crime Rescue!",
@@ -83,7 +81,6 @@ class _SendNotificationState extends State<SendNotification> {
                   sendPushNotification(
                       "Emergency Alert!",
                       "Emergency call for gas leak triggered!",
-                      "cQBS9d39RICHdAyUKOoead:APA91bEnWuDFMWCsPP4P-ZqYHErUM8xXc9D2xdASp3L-efpanTrst6-LHuUjnQAAy7g6JxAc32g1Ot4U1HxuR8o35RVORzlPZ6_WxM9N4aoj9v96xAnFQ-VOrrPT2_pc6zeN1BhiuonH");
                 },
                 child: Text(
                   "Gas leak!",
@@ -103,7 +100,6 @@ Future<void> sendPushNotification(
   print(description);
   print(fcmToken);
   const String serverKey =
-      "AAAAAT7lLnA:APA91bHMIgxfCdBbtFHVY-FHziIAqSMJN1W0hCBbc4MtONA40vWDuAjBDadbFLeej2DBlEjZsXG_5ESCdQ0B3X1wIn0T-J6dlrxzyzURoMJpB2JkBlYezF_3Rw0sE8hV_aPvV5moUJhH"; // Replace with your Firebase server key
   final String url = 'https://fcm.googleapis.com/fcm/send';
   final body = {
     'notification': {'title': title, 'body': description},
