@@ -217,7 +217,7 @@ class _EnglishState extends State<English> {
 
   Future<String> getResponseFromGeminiPseudo(String prompt) async {
     final gemini = GenerativeModel(
-        model: 'gemini-pro', apiKey: "AIzaSyBplucySecKRr5HusyDsShTBgRVg3HTBgs");
+        model: 'gemini-pro', apiKey: "");
     try {
       final content = [Content.text(prompt)];
       final response = await gemini.generateContent(content);
