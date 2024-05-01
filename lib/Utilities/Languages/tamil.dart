@@ -216,7 +216,7 @@ class _TamilState extends State<Tamil> {
 
   Future<String> getResponseFromGemini(String prompt) async {
     final gemini =
-        GoogleGemini(apiKey: "AIzaSyBplucySecKRr5HusyDsShTBgRVg3HTBgs");
+        GoogleGemini(apiKey: "");
 
     try {
       final response = await gemini.generateFromText(prompt);
